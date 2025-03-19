@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git credentialsId: 'github-token', url: 'https://github.com/<GITHUB_KULLANICI_ADIN>/<REPO_ADIN>.git', branch: 'main'
+                git credentialsId: 'github-token', url: 'https://github.com/BeyzaInsider/JenkinsProject.git', branch: 'main'
             }
         }
         stage('Install Dependencies') {
